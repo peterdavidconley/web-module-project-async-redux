@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getBitcoin } from '../actions/index';
-
+import '../App.css';
 
 const Coin = (props) => {
 
@@ -25,7 +25,7 @@ const Coin = (props) => {
        }
 
     return(
-        <div>
+        <div className='Coin'>
             <br />
             <p>Symbol: {coin.symbol}</p>
             <p>Price: ${coin.price}</p>
@@ -34,7 +34,7 @@ const Coin = (props) => {
             <button onClick={handleClick}>Update</button>
             <br />
             <br />
-            <p>Data from: <a href='https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD'>https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD</a></p>
+            <p>Source: <a href='https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD'>https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD</a></p>
         </div>
     )
 }

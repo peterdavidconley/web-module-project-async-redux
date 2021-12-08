@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.Coin {
+  background-color: orange;
+  color: white;
+  margin: 5%;
+  padding: 5%;
+}
