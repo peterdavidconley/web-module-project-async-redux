@@ -11,7 +11,11 @@ import './index.css';
 
 import { reducer } from './reducers/reducers';
 
+const store = createStore(reducer)
+
 ReactDOM.render(
-  <App />,
+  <Provider store={store}>
+  <App />
+  </Provider>,
   document.getElementById('root')
 );
