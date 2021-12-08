@@ -26,10 +26,15 @@ const Coin = (props) => {
 
     return(
         <div>
+            <br />
             <p>Symbol: {coin.symbol}</p>
-            <p>Price: {coin.price}</p>
-            <p>Total Market Cap: {coin.marketCap}</p>
+            <p>Price: ${coin.price}</p>
+            <p>Total Market Cap: ${coin.marketCap}</p>
+            <br />
             <button onClick={handleClick}>Update</button>
+            <br />
+            <br />
+            <p>Data from: <a href='https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD'>https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD</a></p>
         </div>
     )
 }
