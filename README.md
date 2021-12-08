@@ -6,6 +6,8 @@ This project allows you to practice the concepts and techniques learned in this 
 
 This is the chance to let your skills shine! You have learned _sooo_ much the last month, and now you get to put all of your hard-earned skills to work. Choose an open api ([this list](https://github.com/public-apis/public-apis)). Protip - don't take too long choosing an API. Pick one that looks interesting, and get building.
 
+https://github.com/public-apis/public-apis#cryptocurrency
+
 Once you have chosen an API to consume, build an app that makes sense for the data you will be retrieving. Have fun with this. You get to be the creative mind. You get to make all the decisions here. I'm excited to see what you build!
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this project.**
@@ -23,8 +25,8 @@ In this project you'll choose an api to consume. You will build an application f
 ### Task 1: Project Set Up
 
 - [x] Create a forked copy of this project.
-- [ ] Start up the app using `npm start`.
-- [ ] Add your code into teh `\src` folder.
+- [x] Start up the app using `npm start`.
+- [x] Add your code into the `\src` folder.
 
 ### Task 2: Minimum Viable Product
 
