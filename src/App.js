@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h4>Crypto API</h4>
+        <h1>Live Bitcoin Statistics</h1>
       </div>
     <Coin />
     </div>
