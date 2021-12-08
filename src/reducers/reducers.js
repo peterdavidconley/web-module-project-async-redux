@@ -1,3 +1,5 @@
+import { FETCH_START, FETCH_FAIL, FETCH_SUCCESS } from '../actions/index';
+
 const initialState = {
     
 "coin": {
@@ -25,5 +27,31 @@ const initialState = {
 
 export const reducer = (state = initialState, action) => {
     
+    switch (action.type) {
+        case(FETCH_START):
+        return({
+          ...state,
+          person: {},
+          isFetching: true,
+          error: ''
+        })
+        case(FETCH_SUCCESS):
+        return({
+          ...state,
+          person: action.payload,
+          isFetching: false,
+          error: '',
+          
+        })
+        case(FETCH_FAIL): 
+        return ({
+          ...state,
+          person: {},
+          isFetching: false,
+          error: action.payload,
+        })
+        default:
+          return state;
+      }
    
 }
