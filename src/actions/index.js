@@ -9,8 +9,9 @@ export const getBitcoin = () => {
     return (dispatch) => {
         dispatch(fetchStart());
         
-        axios.get(`https://randomuser.me/api`)
+        axios.get(`https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD`)
         .then(resp => {
+            console.log(resp)
             dispatch(fetchSuccess(resp.coin))
         })
         .catch(err => {
