@@ -6,12 +6,14 @@ import axios from 'axios'
 
 export const getBitcoin = () => {
 
+    
+
     return (dispatch) => {
         dispatch(fetchStart());
         
         axios.get(`https://api.coinstats.app/public/v1/coins/bitcoin?currency=USD`)
         .then(resp => {
-            console.log(resp)
+            console.log(resp.coin)
             dispatch(fetchSuccess(resp.coin))
         })
         .catch(err => {
